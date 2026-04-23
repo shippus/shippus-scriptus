@@ -13,9 +13,11 @@ if not config then
 	config:SetAttribute("hour", 12)
 end
 
+-- You can delete everything between these lines if you won't use the API
 local api_Daytimecycle = Instance.new("RemoteEvent")
 api_Daytimecycle.Parent = game.ReplicatedStorage
 api_Daytimecycle.Name = "changeCycle" -- Change the name to another if desired. Though, if you do, you will have to change all references from the old name to the new one.
+-- You can delete everything between these lines if you won't use the API
 
 -- Configuration --
 local duration_Day = script.Configuration:GetAttribute("duration_Day") -- Duration of day in minutes.
