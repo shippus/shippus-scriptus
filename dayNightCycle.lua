@@ -7,7 +7,7 @@ local config = script:FindFirstChild("Configuration")
 if not config then
 	config = Instance.new("Configuration")
 	config.Parent = script
-	-- Here you can change the values, must be integers.
+	-- Here you can change the values.
 	config:SetAttribute("duration_Day", 15) 
 	config:SetAttribute("duration_Night", 15)
 	config:SetAttribute("hour", 12)
@@ -36,7 +36,7 @@ config:GetAttributeChangedSignal("duration_Night"):Connect(function()
 	print("duration_Night variable changed to: " .. tostring(duration_Night))
 end)
 config:GetAttributeChangedSignal("hour"):Connect(function()
-	local Hour = script.Configuration:GetAttribute("hour")
+	local hour = script.Configuration:GetAttribute("hour")
 	print("hour variable changed to: " .. tostring(hour))
 end)
 -- Main --
@@ -61,4 +61,4 @@ local function cycle()
 	end
 end
 
-cycle(duration_Day, duration_Night, hour) -- Calls the function to start the cycle.
+cycle() -- Calls the function to start the cycle.
