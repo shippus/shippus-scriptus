@@ -38,7 +38,7 @@ config:GetAttributeChangedSignal("duration_Night"):Connect(function()
 	print("duration_Night variable changed to: " .. tostring(duration_Night))
 end)
 config:GetAttributeChangedSignal("hour"):Connect(function()
-	local hour = script.Configuration:GetAttribute("hour")
+	hour = script.Configuration:GetAttribute("hour")
 	print("hour variable changed to: " .. tostring(hour))
 end)
 -- Main --
