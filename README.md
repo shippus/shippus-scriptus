@@ -8,6 +8,6 @@ Hello, this is a collection of scripts I've made in Luau *(Roblox Studio's Lua v
 Below, I'll document how to use each script.
 
 ### `dayNightCycle` script:
-- Place in ServerScriptService.O
+- Place in `ServerScriptService`.
 
 *Otherwise*, the script should handle everything else by itself. Please report in the issues tab if otherwise.
